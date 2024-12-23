@@ -1,0 +1,132 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+}
+
+    header h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: left;
+    }
+    header h2 {
+        
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+        flex-grow:1;
+
+    }
+nav{
+    display:flex;
+    gap: 1rem;
+    justify-content:flex-end;
+    gap: 1rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.intro {
+    display: flex; /* Enable Flexbox for horizontal alignment */
+    align-items: center; /* Align items vertically in the center */
+    gap: 1rem; /* Add spacing between the image and the text */
+    margin: 5rem; /* Center the section on the page */
+    max-width: 80%; /* Limit the width of the section for proper alignment */
+    margin-bottom: 3rem;
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5rem;
+}
+
+.text-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 auto; 
+    width: 80%; 
+    max-width: 600px; 
+    text-align: justify; 
+    color: #666;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, background-color 0.2s;
+    margin-top:5rem;
+}
+
+    .button.resume {
+        background-color: #f9c80e;
+    }
+
+    .button.projects {
+        background-color: #e63946;
+    }
+
+    .button.contact {
+        background-color: #00a8e8;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
